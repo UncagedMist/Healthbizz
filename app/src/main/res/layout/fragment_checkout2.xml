@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/official"
+    tools:context=".Fragments.Checkout2Fragment">
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="75dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/number_one"/>
+
+        <TextView
+            android:layout_marginStart="5dp"
+            android:padding="5dp"
+            android:textColor="@color/official"
+            android:text="Billing Address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_above="@id/layoutButton"
+        android:layout_below="@id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="First Name (Mandatory *)"
+                app:endIconMode="clear_text"
+                app:hintTextColor="@color/white"
+                android:textColorHint="@color/white"
+                app:startIconTint="@color/white"
+                app:startIconDrawable="@drawable/name">
+
+                <EditText
+                    android:id="@+id/edtFName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:background="@drawable/edittext_back"
+                    android:inputType="textPersonName"
+                    android:imeOptions="actionNext" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Last Name (Mandatory *)"
+                app:endIconMode="clear_text"
+                app:hintTextColor="@color/white"
+                android:textColorHint="@color/white"
+                app:startIconTint="@color/white"
+                android:layout_marginTop="8dp"
+                app:startIconDrawable="@drawable/name">
+
+                <EditText
+                    android:id="@+id/edtLName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_back"
+                    android:textColor="@color/white"
+                    android:inputType="textPersonName"
+                    android:imeOptions="actionNext" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email (Mandatory *)"
+                app:endIconMode="clear_text"
+                app:hintTextColor="@color/white"
+                app:startIconDrawable="@drawable/email"
+                android:layout_marginTop="8dp"
+                android:textColorHint="@color/white"
+                app:startIconTint="@color/white"
+                app:endIconDrawable="@drawable/ic_cancel_white_24dp">
+
+                <EditText
+                    android:id="@+id/edtEmail"
+                    android:background="@drawable/edittext_back"
+                    android:inputType="textEmailAddress"
+                    android:imeOptions="actionNext"
+                    android:textColor="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="Phone Number (Mandatory *)"
+                app:counterEnabled="true"
+                app:counterMaxLength="10"
+                app:endIconMode="clear_text"
+                app:hintTextColor="@color/white"
+                app:prefixText="+91"
+                android:textColorHint="@color/white"
+                app:startIconTint="@color/white"
+                app:startIconDrawable="@drawable/phone">
+
+                <EditText
+                    android:id="@+id/edtPhone"
+                    android:background="@drawable/edittext_back"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:textColor="@color/white" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Address 1 (Mandatory *)"
+                app:endIconMode="clear_text"
+                app:hintTextColor="@color/white"
+                android:textColorHint="@color/white"
+                app:startIconTint="@color/white"
+                app:startIconDrawable="@drawable/ic_baseline_location_on_24">
+
+                <EditText
+                    android:id="@+id/edtAdd1"
+                    android:background="@drawable/edittext_back"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textColor="@color/white"
+                    android:imeOptions="actionNext" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Address 2 (Mandatory *)"
+                app:endIconMode="clear_text"
+                app:hintTextColor="@color/white"
+                android:layout_marginTop="8dp"
+                android:textColorHint="@color/white"
+                app:startIconTint="@color/white"
+                app:startIconDrawable="@drawable/ic_baseline_location_on_24">
+
+                <EditText
+                    android:id="@+id/edtAdd2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:background="@drawable/edittext_back"
+                    android:textColor="@color/white"
+                    android:imeOptions="actionNext" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="City (Mandatory *)"
+                app:endIconMode="clear_text"
+                app:hintTextColor="@color/white"
+                android:layout_marginTop="8dp"
+                android:textColorHint="@color/white"
+                app:startIconTint="@color/white"
+                app:startIconDrawable="@drawable/ic_baseline_location_city_24">
+
+                <EditText
+                    android:id="@+id/edtCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:background="@drawable/edittext_back"
+                    android:textColor="@color/white"
+                    android:imeOptions="actionNext" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Zip Code / Pin Code (Mandatory *)"
+                app:endIconMode="clear_text"
+                android:layout_marginTop="8dp"
+                app:counterEnabled="true"
+                app:counterMaxLength="6"
+                android:textColorHint="@color/white"
+                app:startIconTint="@color/white"
+                app:hintTextColor="@color/white"
+                app:startIconDrawable="@drawable/ic_baseline_location_on_24">
+
+                <EditText
+                    android:id="@+id/edtZip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:background="@drawable/edittext_back"
+                    android:textColor="@color/white"
+                    android:imeOptions="actionDone" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:textColor="@color/white"
+                android:text="Select Country *"
+                android:textSize="12sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Spinner
+                android:id="@+id/spinnerCountry"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edittext_back"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/layoutButton"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_margin="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnPrevious"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_btn"
+            android:text="Previous"
+            android:textAllCaps="false"
+            android:textColor="@color/official" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnNext"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_marginStart="5dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_main"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:textColor="@color/official" />
+
+    </LinearLayout>
+
+</RelativeLayout>

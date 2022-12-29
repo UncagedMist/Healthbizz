@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="title_list">
+        <item>Home</item>
+        <item>About</item>
+        <item>Blogs</item>
+        <item>Our Video</item>
+        <item>Contact</item>
+        <item>Sign Out</item>
+    </string-array>
+
+    <string-array name="icon_list">
+        <item>@drawable/ic_baseline_home_24</item>
+        <item>@drawable/ic_baseline_info_24</item>
+        <item>@drawable/ic_baseline_apps_24</item>
+        <item>@drawable/ic_baseline_slow_motion_video_24</item>
+        <item>@drawable/ic_baseline_contact_support_24</item>
+        <item>@drawable/ic_baseline_login_24</item>
+
+    </string-array>
+
+</resources>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Health Bizz</string>
+
+    <string name="copy_right" translatable="false">Copyrights © %1$d</string>
+
+    <string name="razor_key_id">rzp_test_dhl8Hg5WeesQqd</string>
+    <string name="razor_key_secret">YLxsbAR2gMmVsbu77jkDZylQ</string>
+</resources>

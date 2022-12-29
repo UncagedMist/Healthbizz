@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="10dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/productImage"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/txtDiscount"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="5dp"
+            android:padding="5dp"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:background="@drawable/text_round"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <LinearLayout
+            android:layout_below="@id/productImage"
+            android:orientation="vertical"
+            android:background="@color/official"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:textColor="@color/white"
+                android:padding="5dp"
+                android:id="@+id/productName"
+                android:layout_marginStart="8dp"
+                android:textSize="12sp"
+                android:fontFamily="@font/montserrat_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit ="marquee_forever"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:scrollHorizontally="true"/>
+
+            <RelativeLayout
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/previousPrice"
+                    android:textSize="12sp"
+                    android:singleLine="true"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textColor="@color/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/discountPrice"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textSize="12sp"
+                    android:layout_toRightOf="@id/previousPrice"
+                    android:singleLine="true"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

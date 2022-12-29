@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#773A7E"
+    tools:context=".Activity.LoginActivity">
+
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:textSize="33sp"
+        android:fontFamily="@font/montserrat_bold"
+        android:textColor="@color/white"
+        android:text="Login to\n your account."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_below="@id/txt"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="80dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/purple_back">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:background="@drawable/circle"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/layers_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:text="Your Email"
+                android:textColor="@color/white"
+                android:fontFamily="@font/montserrat_bold"
+                android:textSize="18sp"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="24dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/edtEmail"
+                android:background="@drawable/edittext_back"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:padding="8dp"
+                android:inputType="textEmailAddress"
+                android:hint="Enter your email"
+                android:textSize="16sp"
+                android:imeOptions="actionNext"
+                android:textColorHint="#a2a4b5"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:text="Your Password"
+                android:textColor="@color/white"
+                android:fontFamily="@font/montserrat_bold"
+                android:textSize="18sp"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="24dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/edtPassword"
+                android:background="@drawable/edittext_back"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:padding="8dp"
+                android:inputType="textPassword"
+                android:hint="Enter your password"
+                android:textSize="16sp"
+                android:imeOptions="actionDone"
+                android:textColorHint="#a2a4b5"
+                android:textColor="@color/white" />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/ckbRemember"
+                android:layout_width="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:text="Remember me"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="4dp"
+                android:padding="8dp"
+                android:theme="@style/MyCheckBox"
+                android:fontFamily="@font/montserrat_bold"
+                android:layout_gravity="center_vertical"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/txtForgot"
+                android:layout_marginEnd="24dp"
+                android:layout_marginTop="4dp"
+                android:textAlignment="viewEnd"
+                android:fontFamily="@font/montserrat_bold"
+                android:textSize="18sp"
+                android:text="Forgot Password?"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="24dp">
+
+                <ImageView
+                    android:id="@+id/imgFb"
+                    android:layout_weight="1"
+                    android:src="@drawable/facebook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:id="@+id/imgGoogle"
+                    android:layout_weight="1"
+                    android:src="@drawable/google"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:id="@+id/imgTwitter"
+                    android:layout_weight="1"
+                    android:src="@drawable/twitter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnLogin"
+            android:background="@drawable/blue_back"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            style="@android:style/Widget.Button"
+            android:text="Login"
+            android:fontFamily="@font/montserrat_bold"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:layout_alignParentBottom="true"
+            />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/btnRegister"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        android:padding="5dp"
+        android:layout_alignParentBottom="true"
+        android:fontFamily="@font/montserrat_bold"
+        android:textSize="14sp"
+        android:layout_marginStart="24dp"
+        android:background="@drawable/edittext_back"
+        android:layout_marginBottom="20dp"
+        android:text="Don't have an Account? Signup."
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

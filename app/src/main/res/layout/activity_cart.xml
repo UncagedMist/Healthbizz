@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/white"
+    tools:context=".Activity.CartActivity">
+
+    <TextView
+        android:id="@+id/txtMsg"
+        android:textAlignment="center"
+        android:textColor="@color/official"
+        android:textSize="20sp"
+        android:visibility="gone"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Your Cart is Empty! Shop Now!"
+        android:layout_above="@id/btnShopNow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:id="@+id/btnShopNow"
+        android:textColor="@color/official"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:text="Shop Now"
+        android:background="@drawable/btn_main"/>
+
+
+    <TextView
+        android:id="@+id/txtCart"
+        android:textSize="20sp"
+        android:fontFamily="@font/montserrat_bold"
+        android:textColor="@color/price"
+        android:padding="8dp"
+        android:singleLine="true"
+        android:text="Your Cart"
+        android:layout_marginStart="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_below="@id/txtCart"
+        android:layout_above="@id/txtNote"
+        android:layout_alignParentStart="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <TextView
+        android:id="@+id/txtNote"
+        android:textColor="@color/white"
+        android:layout_marginStart="20dp"
+        android:text="Note : Swipe left to Clear Cart."
+        android:layout_above="@id/btnCheckout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_marginTop="10dp"
+        android:id="@+id/btnCheckout"
+        android:textSize="30sp"
+        android:text="Checkout"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/official"
+        android:background="@drawable/login_btn"
+        android:layout_width="250dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

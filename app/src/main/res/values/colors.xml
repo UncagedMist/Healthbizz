@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="purple">#ba53de</color>
+    <color name="pink">#fa69a9</color>
+    <color name="blue">#88bef5</color>
+
+    <color name="overlayBackground">#7f333639</color>
+    <color name="overlayActionBar">#0e0d0e</color>
+
+    <color name="overlayBackgroundMenu">#7f004487</color>
+    <color name="overlayBackgroundFood">#7f008716</color>
+
+    <color name="bgRowBackground">#FA315B</color>
+
+    <color name="colorAccent">#448AFF</color>
+    <color name="colorPrimary">#FF03DAC5</color>
+
+    <color name="textColorPrimary">#212121</color>
+    <color name="textColorSecondary">#757575</color>
+
+    <color name="official">#003A79</color>
+    <color name="name">#232323</color>
+    <color name="price">#ED6E00</color>
+    <color name="desc">#A78688</color>
+    <color name="black_overlay">#66000000</color>
+
+
+</resources>
